@@ -28,6 +28,17 @@ body {
 .header {
     background-color: #FFFFFF;
     padding: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-indent: 1px;
+
+    color: #000000;
 }
 
 .formulario {
@@ -50,43 +61,6 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-}
-
-.organizar-input {
-    width: 314px;
-    height: 52px;
-    border: 2px solid #000000;
-    border-radius: 7px;
-
-    background-color: #ffffff;
-
-    font-size: 14px;
-    padding: 10px;
-}
-
-.organizar-input2 {
-    width: 201px;
-    height: 52px;
-    border: 2px solid #000000;
-    border-radius: 7px;
-
-
-    background-color: #ffffff;
-
-    font-size: 14px;
-    padding: 10px;
-}
-
-.organizar-input3 {
-    width: 96px;
-    height: 52px;
-    border: 2px solid #000000;
-    border-radius: 7px;
-
-    background-color: #ffffff;
-
-    font-size: 14px;
-    padding: 10px; 
 }
 
 .conteudo-formulario small {
