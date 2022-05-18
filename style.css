@@ -107,10 +107,11 @@ body {
 }
 
 .conteudo-formulario small {
-    position: absolute;
     bottom: 0;
     left: 0;
-    visibility: hidden;
+    visibility: visible;
+    font-size: 1.2rem;
+    color: #C02F1F;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
