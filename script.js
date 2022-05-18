@@ -7,23 +7,15 @@ let uf = document.querySelector('#uf');
 let ibge = document.querySelector('#ibge');
 let ddd = document.querySelector('#ddd');
 
-cep.value = '01001000';
-
 cep.addEventListener('blur', function(e) {
     let cep = e.target.value;
     let script  = document.createElement('script');
     script.src = 'https://viacep.com.br/ws/'+cep+'/json/?callback=informacoesFormulario';
     document.body.appendChild(script);
-
-    function checarInput();
 });
 
 function informacoesFormulario(resultado) {
     
-    if("erro" in resultado) {
-        alert('CEP não encontrado');
-        return;
-    }
 
     console.log(resultado);
     rua.value = resultado.logradouro;
