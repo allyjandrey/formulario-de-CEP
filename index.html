@@ -26,25 +26,31 @@
             <label for="bairro">Bairro</label>
             <input type="text" id="bairro" disabled />
         </div>
-        <div class="conteudo-formulario">
-            <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" disabled />
-
-            <label for="uf">
-                <abbr title="Unidade Federativa">UF</abbr>
-            </label>
-            <input type="text" id="uf" disabled />
+        <div class="conteudo-formulario" id="formCima">
+            <div class="formularioEsquerdo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" disabled />
+            </div>
+            <div class="formularioDireito">
+                <label for="uf">
+                    <abbr title="Unidade Federativa">UF</abbr>
+                </label>
+                <input type="text" id="uf" disabled />
+            </div>
         </div>
-        <div class="conteudo-formulario">
-            <label for="ibge">
-                <abbr title="Instituto Brasileiro de Geografia e Estatística">IBGE</abbr>
-            </label>
-            <input type="number" id="ibge" disabled/>
-
+        <div class="conteudo-formulario" id="formBaixo">
+            <div class="formularioEsquerdo">
+                <label for="ibge">
+                    <abbr title="Instituto Brasileiro de Geografia e Estatística">IBGE</abbr>
+                </label>
+                <input type="number" id="ibge" disabled/>
+        </div>
+        <div class="formularioDireito">
             <label for="ddd">
                 <abbr title="Discagem Direta a Distância">DDD</abbr>
             </label>
             <input type="number" id="ddd" disabled />
+            </div>
         </div>
         </form>
     </div>

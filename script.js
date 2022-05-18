@@ -25,31 +25,3 @@ function informacoesFormulario(resultado) {
     ibge.value = resultado.ibge;
     ddd.value = resultado.ddd;
 }
-
-function checarInput() {
-    const cepValor = cep.value;
-
-    if (cepValor == "") {
-        setarErro(username, "Insira um cep válido");
-    } else if (cepValor.length > 9) {
-        setarErro(username, "Um CEP não tem mais que 9 dígitos")
-    } else {
-        setarSucesso(username);
-    }
-}
-
-function setarErro(input, mensagem) {
-    const conteudoFormulario = input.parentElement;
-    const small = conteudoFormulario.querySelector('small');
-    
-
-    small.innerText = mensagem;
-
-    conteudoFormulario.className = "conteudo-formulario erro";
-}
-
-function setarSucesso(input) {
-    const conteudoFormulario = input.parentElement;
-
-    conteudoFormulario.className = "conteudo-formulario sucesso";
-}

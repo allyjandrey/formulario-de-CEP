@@ -55,12 +55,55 @@ body {
     display: inline-block;
     margin-bottom: 5px;
     color: #000000;
+    display: block;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+}
+
+#formCima, #formBaixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cep, #rua, #bairro {
+    width: 314px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    display: block;
+
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+#cidade, #ibge {
+    width: 201px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    display: block;
+
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+#ddd, #uf {
+    width: 96px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    display: block;
+
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
 }
 
 .conteudo-formulario small {
@@ -79,18 +122,4 @@ body {
 input:focus {
     background: #5b5b5b;
     border: 2px solid #000000;
-}
-
-
-.conteudo-formulario.sucesso input {
-    border-color: #2ecc71;
-}
-
-.conteudo-formulario.erro input {
-    border-color: #c02f1f;
-}
-
-.conteudo-formulario.erro small {
-    visibility: visible;
-    color: #c02f1f;
 }
