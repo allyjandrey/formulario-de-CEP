@@ -12,15 +12,129 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url(img/planetas.png);
 }
 
-.conteudo {
+.container {
     width: 527px;
     height: 650px;
-    background-color: #4896c4;
+    background-image: url(img/sky.png);
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
     max-width: 100%;
     overflow: hidden;
+}
+
+.header {
+    background-image: url(img/sky.png);
+    background-color: #593656;
+    padding: 20px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-indent: 1px;
+
+    color: #ffffff;
+}
+
+.formulario {
+    padding: 20px;
+}
+
+.conteudo-formulario {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.conteudo-formulario label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #e2e2e2;
+    display: block;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.conteudo-formulario input {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+#formCima, #formBaixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cep, #rua, #bairro {
+    width: 314px;
+    height: 52px;
+    border: 2px solid #8e8c8c;
+    border-radius: 7px;
+    display: block;
+
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+#cidade, #ibge {
+    width: 201px;
+    height: 52px;
+    border: 2px solid #8e8c8c;
+    border-radius: 7px;
+    display: block;
+
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+#ddd, #uf {
+    width: 96px;
+    height: 52px;
+    border: 2px solid #8e8c8c;
+    border-radius: 7px;
+    display: block;
+
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.conteudo-formulario small {
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+    font-size: 1.2rem;
+    color: #C02F1F;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+input:focus {
+    background-image: url(img/sky.png);
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }

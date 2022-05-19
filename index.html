@@ -8,45 +8,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteudo">
+    <div class="container">
         <div class="header">
             <h2>Localização</h2>
         </div>
         <form id="formulario" class="formulario">
-            <div class="controlar-formulario">
+            <div class="conteudo-formulario">
                 <label for="cep">Informe o <abbr title="Código de Endereçamento Postal">CEP</abbr></label>
                 <input type="number" id="cep" required />
-                <small>mensagem de erro</small>
+                <small id="small"></small>
             </div>
-            <div class="controlar-formulario">
+            <div class="conteudo-formulario">
             <label for="rua">Rua</label>
             <input type="text" id="rua" disabled />
         </div>
-        <div class="controlar-form">
+        <div class="conteudo-formulario">
             <label for="bairro">Bairro</label>
             <input type="text" id="bairro" disabled />
         </div>
-        <div class="cidade">
-            <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" disabled />
-
-            <label for="uf">
-                <abbr title="Unidade Federativa">UF</abbr>
-            </label>
-            <input type="text" id="uf" disabled />
+        <div class="conteudo-formulario" id="formCima">
+            <div class="formularioEsquerdo">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" disabled />
+            </div>
+            <div class="formularioDireito">
+                <label for="uf">
+                    <abbr title="Unidade Federativa">UF</abbr>
+                </label>
+                <input type="text" id="uf" disabled />
+            </div>
         </div>
-        <div class="controlar-formulario">
-            <label for="ibge">
-                <abbr title="Instituto Brasileiro de Geografia e Estatística">IBGE</abbr>
-            </label>
-            <input type="number" id="ibge" disabled/>
-
+        <div class="conteudo-formulario" id="formBaixo">
+            <div class="formularioEsquerdo">
+                <label for="ibge">
+                    <abbr title="Instituto Brasileiro de Geografia e Estatística">IBGE</abbr>
+                </label>
+                <input type="number" id="ibge" disabled/>
+        </div>
+        <div class="formularioDireito">
             <label for="ddd">
                 <abbr title="Discagem Direta a Distância">DDD</abbr>
             </label>
             <input type="number" id="ddd" disabled />
+            </div>
         </div>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
