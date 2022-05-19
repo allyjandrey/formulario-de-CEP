@@ -57,6 +57,6 @@ function delay(i){
         ibge.value = 'Viajando...'
         ddd.value = 'Viajando...'
 
-        setTimeout(resolve,i*1000);
+        setTimeout(resolve,i*500);
     });
 }
