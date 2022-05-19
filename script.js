@@ -34,7 +34,7 @@ async function informacoesFormulario(resultado) {
         inputt.value = ""
     } else {
         cep.style.borderColor = "#2ECC71"
-        await delay(2);
+        await delay(1);
 
     rua.value = resultado.logradouro;
     bairro.value = resultado.bairro;
@@ -49,13 +49,13 @@ function delay(i){
 
     return new Promise(function(resolve){
 
-        cep.value = 'loading...'
-        rua.value = 'loading...'
-        bairro.value = 'loading...'
-        cidade.value = 'loading...'
-        uf.value = 'loading...'
-        ibge.value = 'loading...'
-        ddd.value = 'loading...'
+        cep.value = 'Viajando...'
+        rua.value = 'Viajando...'
+        bairro.value = 'Viajando...'
+        cidade.value = 'Viajando...'
+        uf.value = 'Viajando...'
+        ibge.value = 'Viajando...'
+        ddd.value = 'Viajando...'
 
         setTimeout(resolve,i*1000);
     });
